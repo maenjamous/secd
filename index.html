@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,10 +19,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        padding: 1rem;
       }
       main {
-        padding: 1rem;
-        text-align: center;
+        max-width: 600px;
       }
       h1 {
         font-size: 2.5rem;
@@ -33,30 +34,45 @@
         h1 {
           font-size: 1.5rem;
         }
+        p {
+          font-size: 0.9rem;
+        }
       }
       h1::after {
         content: "";
-        background-color: #ffe800;
         background: repeating-linear-gradient(45deg, #ffe800, #ffe800 0.5rem, #222 0.5rem, #222 1.0rem);
         display: block;
         height: 0.5rem;
         margin-top: 1rem;
       }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
       p {
         margin: 1rem 0 0 0;
+      }
+      a {
+        color: #0056b3;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
     <main>
-      <h1>منظمة المهندسين السوريين للإعمار والتنمية</h1>
-      <h1>Syrians Engineers for Construction and Development</h1>
-      <p>الموقع تحت الإنشاء. نعتذر عن الإزعاج، نحن نعمل على تحسين الموقع. يرجى العودة لاحقًا.</p>
-      <p>The website for the Syrians Engineers for Construction and Development is under construction. We apologize for the inconvenience, and we are working on improving the site. Please check back later.</p>
+      <h1 dir="rtl">منظمة المهندسين السوريين للإعمار والتنمية</h1>
+      <h1 dir="ltr">Syrians Engineers for Construction and Development</h1>
+
+      <p dir="rtl">الموقع تحت الإنشاء. نعتذر عن الإزعاج، نحن نعمل على تحسين الموقع. يرجى العودة لاحقًا.</p>
+      <p dir="ltr">The website for the Syrians Engineers for Construction and Development is under construction. We apologize for the inconvenience, and we are working on improving the site. Please check back later.</p>
+
+      <p dir="rtl">
+        يمكنكم زيارة صفحتنا على فيسبوك:
+        <a href="https://www.facebook.com/SECD0" target="_blank" rel="noopener">اضغط هنا</a>
+      </p>
+      <p dir="ltr">
+        You can visit our Facebook page:
+        <a href="https://www.facebook.com/SECD0" target="_blank" rel="noopener">Click here</a>
+      </p>
     </main>
   </body>
 </html>
